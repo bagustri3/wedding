@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react"; // Added Suspense
 import { useSearchParams } from "next/navigation";
 import { CoverSection } from "@/components/wedding/cover-section";
 import { HeroSection } from "@/components/wedding/hero-section";
@@ -14,7 +14,8 @@ import { FooterSection } from "@/components/wedding/footer-section";
 import { MusicPlayer } from "@/components/wedding/music-player";
 import { LocationSection } from "@/components/wedding/location-section";
 
-export default function WeddingInvitation() {
+// 1. Move the main logic to a internal component
+function WeddingContent() {
   const [isOpen, setIsOpen] = useState(false);
   const [guestName, setGuestName] = useState<string>("");
   const searchParams = useSearchParams();
@@ -25,6 +26,7 @@ export default function WeddingInvitation() {
       setGuestName(decodeURIComponent(to));
     }
   }, [searchParams]);
+
   return (
     <main className="min-h-screen">
       <CoverSection onOpen={() => setIsOpen(true)} guestName={guestName} imagePath="/images/bg.jpg" />
@@ -44,5 +46,14 @@ export default function WeddingInvitation() {
         </>
       )}
     </main>
+  );
+}
+
+// 2. Wrap the component in Suspense in the default export
+export default function WeddingInvitation() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-white" />}>
+      <WeddingContent />
+    </Suspense>
   );
 }
