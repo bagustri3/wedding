@@ -16,7 +16,7 @@ export function FooterSection() {
         <h2 className="font-serif text-4xl md:text-5xl text-[#f5efe8] mb-4">
           Bagus & Mei
         </h2>
-        
+
         <div className="flex items-center justify-center gap-2 text-[#c9a962] mb-8">
           <div className="w-12 h-[1px] bg-[#c9a962]" />
           <Heart className="w-4 h-4 fill-current" />
@@ -24,7 +24,9 @@ export function FooterSection() {
         </div>
 
         <p className="text-[#f5efe8]/80 max-w-md mx-auto mb-8 leading-relaxed">
-          Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada kedua mempelai.
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami, apabila
+          Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu kepada
+          kedua mempelai.
         </p>
 
         <p className="text-[#c9a962] text-sm tracking-wider">
@@ -32,8 +34,18 @@ export function FooterSection() {
         </p>
 
         <div className="mt-12 pt-8 border-t border-[#f5efe8]/20">
+          <p className="text-[#f5efe8]/60 text-sm">06 April 2026</p>
+        </div>
+        <div className="mt-2 pt-8">
           <p className="text-[#f5efe8]/60 text-sm">
-            06 April 2026
+            <a
+              href="https://si-techno.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#c9a962] transition-colors"
+            >
+              Created by SI-TECHNO
+            </a>
           </p>
         </div>
       </motion.div>

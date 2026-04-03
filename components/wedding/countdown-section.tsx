@@ -19,7 +19,7 @@ export function CountdownSection() {
   });
 
   useEffect(() => {
-    const weddingDate = new Date("2026-04-06T10:00:00").getTime();
+    const weddingDate = new Date("2026-04-06T09:00:00").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();

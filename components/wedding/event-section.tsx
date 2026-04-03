@@ -34,8 +34,10 @@ export function EventSection() {
             <div className="w-16 h-16 bg-[#f5efe8] rounded-full flex items-center justify-center mx-auto mb-6">
               <span className="font-serif text-2xl text-[#c9a962]">1</span>
             </div>
-            <h3 className="font-serif text-2xl text-[#5c4934] mb-6">Akad Nikah</h3>
-            
+            <h3 className="font-serif text-2xl text-[#5c4934] mb-6">
+              Akad Nikah
+            </h3>
+
             <div className="space-y-4 text-[#8b7355]">
               <div className="flex items-center justify-center gap-3">
                 <Calendar className="w-5 h-5 text-[#c9a962]" />
@@ -43,22 +45,13 @@ export function EventSection() {
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Clock className="w-5 h-5 text-[#c9a962]" />
-                <span>10:00 WIB - Selesai</span>
+                <span>9:00 WIB - 10.00 WIB</span>
               </div>
               <div className="flex items-center justify-center gap-3">
                 <MapPin className="w-5 h-5 text-[#c9a962]" />
                 <span>Kediaman Mempelai Wanita</span>
               </div>
             </div>
-
-            <a
-              href="https://maps.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-2 border border-[#c9a962] text-[#c9a962] rounded-full text-sm hover:bg-[#c9a962] hover:text-white transition-colors"
-            >
-              Lihat Lokasi
-            </a>
           </motion.div>
 
           {/* Resepsi */}
@@ -73,7 +66,7 @@ export function EventSection() {
               <span className="font-serif text-2xl text-[#c9a962]">2</span>
             </div>
             <h3 className="font-serif text-2xl text-[#5c4934] mb-6">Resepsi</h3>
-            
+
             <div className="space-y-4 text-[#8b7355]">
               <div className="flex items-center justify-center gap-3">
                 <Calendar className="w-5 h-5 text-[#c9a962]" />
@@ -81,22 +74,13 @@ export function EventSection() {
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Clock className="w-5 h-5 text-[#c9a962]" />
-                <span>11:00 WIB - Selesai</span>
+                <span>10:00 WIB - Selesai</span>
               </div>
               <div className="flex items-center justify-center gap-3">
                 <MapPin className="w-5 h-5 text-[#c9a962]" />
-                <span>Gedung Serbaguna</span>
+                <span>Kediaman Mempelai Wanita</span>
               </div>
             </div>
-
-            <a
-              href="https://maps.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block mt-6 px-6 py-2 border border-[#c9a962] text-[#c9a962] rounded-full text-sm hover:bg-[#c9a962] hover:text-white transition-colors"
-            >
-              Lihat Lokasi
-            </a>
           </motion.div>
         </div>
       </div>

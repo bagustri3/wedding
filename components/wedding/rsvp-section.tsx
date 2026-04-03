@@ -1,17 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Check, X, Send, Loader2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 
-export function RsvpSection() {
+interface RsvpSectionProps {
+  guestName?: string;
+}
+
+export function RsvpSection({ guestName }: RsvpSectionProps) {
   const [formData, setFormData] = useState({
     name: "",
     attendance: "",
     guests: "1",
     message: "",
   });
+
+  useEffect(() => {
+    if (guestName) {
+      setFormData((prev) => ({ ...prev, name: guestName }));
+    }
+  }, [guestName]);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);

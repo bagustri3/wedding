@@ -8,15 +8,15 @@ const bankAccounts = [
   {
     id: 1,
     bank: "Bank BCA",
-    accountNumber: "1234567890",
-    accountName: "Bagus",
+    accountNumber: "2780516430",
+    accountName: "Bagus Tri Prasetyo",
   },
-  {
-    id: 2,
-    bank: "Bank Mandiri",
-    accountNumber: "0987654321",
-    accountName: "Mei",
-  },
+  // {
+  //   id: 2,
+  //   bank: "Bank BJB",
+  //   accountNumber: "0987654321",
+  //   accountName: "Mei",
+  // },
 ];
 
 export function GiftSection() {

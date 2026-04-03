@@ -48,7 +48,7 @@ export function CoupleSection() {
             </div>
             <h3 className="font-serif text-3xl text-[#5c4934] mb-2">Bagus</h3>
             <p className="text-[#8b7355] text-sm mb-4">Putra dari</p>
-            <p className="text-[#5c4934]">Bapak & Ibu</p>
+            <p className="text-[#5c4934]">Bapak Sinung Raharjo & Ibu Titing Marliah</p>
           </motion.div>
 
           {/* Bride */}
@@ -72,7 +72,7 @@ export function CoupleSection() {
             </div>
             <h3 className="font-serif text-3xl text-[#5c4934] mb-2">Mei</h3>
             <p className="text-[#8b7355] text-sm mb-4">Putri dari</p>
-            <p className="text-[#5c4934]">Bapak & Ibu</p>
+            <p className="text-[#5c4934]">Bapak Wagiman & Ibu Tri Suntari</p>
           </motion.div>
         </div>
       </div>
